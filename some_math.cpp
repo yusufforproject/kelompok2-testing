@@ -3,13 +3,11 @@
 #include <vector>
 #include <complex>
 
-// Function to calculate factorial of a number
 long long factorial(int n) {
     if (n <= 1) return 1;
     return n * factorial(n - 1);
 }
 
-// Function to calculate the nth Fibonacci number using matrix exponentiation
 std::vector<std::vector<long long>> multiply(const std::vector<std::vector<long long>>& A, const std::vector<std::vector<long long>>& B) {
     std::vector<std::vector<long long>> result(2, std::vector<long long>(2));
     for (int i = 0; i < 2; ++i) {
@@ -24,7 +22,7 @@ std::vector<std::vector<long long>> multiply(const std::vector<std::vector<long 
 }
 
 std::vector<std::vector<long long>> matrixPower(std::vector<std::vector<long long>> base, int exp) {
-    std::vector<std::vector<long long>> result = {{1, 0}, {0, 1}}; // Identity matrix
+    std::vector<std::vector<long long>> result = {{1, 0}, {0, 1}};
     while (exp > 0) {
         if (exp % 2 == 1) {
             result = multiply(result, base);
@@ -42,7 +40,6 @@ long long fibonacci(int n) {
     return result[0][0];
 }
 
-// Function to calculate the roots of a quadratic equation
 std::pair<std::complex<double>, std::complex<double>> quadraticRoots(double a, double b, double c) {
     std::complex<double> discriminant = std::sqrt(std::complex<double>(b * b - 4 * a * c));
     std::complex<double> root1 = (-b + discriminant) / (2.0 * a);
@@ -51,15 +48,12 @@ std::pair<std::complex<double>, std::complex<double>> quadraticRoots(double a, d
 }
 
 int main() {
-    // Factorial calculation
     int num = 5;
     std::cout << "Factorial of " << num << " is: " << factorial(num) << "\n";
 
-    // Fibonacci calculation
     int fibIndex = 10;
     std::cout << "The " << fibIndex << "th Fibonacci number is: " << fibonacci(fibIndex) << "\n";
 
-    // Quadratic roots calculation
     double a = 1, b = -3, c = 2;
     auto roots = quadraticRoots(a, b, c);
     std::cout << "Roots of the equation " << a << "x^2 + " << b << "x + " << c << " are: " << roots.first << " and " << roots.second << "\n";
