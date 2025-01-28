@@ -30,3 +30,34 @@
 *.exe
 *.out
 *.app
+
+# .gitignore for C++ projects
+# Build and output files 
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE specific files
+*.vscode/
+*.idea/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.opensdf
+*.ncb
+*.vcxproj*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs 
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~*
+*.swp
