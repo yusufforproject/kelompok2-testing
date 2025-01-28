@@ -17,7 +17,7 @@ int main() {
     cout << "\nResults:" << endl;
     cout << "Sum: " << sum << endl;
     cout << "Difference: " << difference << endl;
-    cout << "Product: " << product << endl;
+    cout << "Product (Multiplication Result): " << product << endl; // Added description
     cout << "Quotient: " << quotient << endl;
 
     return 0;
