@@ -31,14 +31,14 @@
 *.out
 *.app
 
-// .gitignore for C++ projects
-/* Build and output files */
+# .gitignore for C++ projects
+# Build and output files 
 *.exe
 *.out
 *.o
 *.obj
 
-/* IDE specific files */
+# IDE specific files
 *.vscode/
 *.idea/
 *.suo
@@ -49,14 +49,14 @@
 *.ncb
 *.vcxproj*
 
-/* OS generated files */
+# OS generated files
 .DS_Store
 Thumbs.db
 
-/* Logs */
+# Logs 
 *.log
 
-/* Temporary files */
+# Temporary files
 *.tmp
 *.temp
 ~*
